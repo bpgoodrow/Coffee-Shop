@@ -1,4 +1,6 @@
 import React from "react";
+import InventoryList from "./InventoryList";
+
 
 class InventoryControl extends React.Component {
 
