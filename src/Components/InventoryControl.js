@@ -3,6 +3,7 @@ import InventoryList from "./InventoryList";
 import CoffeeDetail from "./CoffeeDetail";
 import NewCoffeeForm from "./NewCoffeeForm";
 import EditCoffeeForm from "./EditCoffeeForm";
+import Coffee from "./Coffee";
 
 class InventoryControl extends React.Component {
 
@@ -12,11 +13,12 @@ class InventoryControl extends React.Component {
       formVisibleOnPage: false,
       mainInventoryList: [],
       selectedCoffee: null,
+      quantity: Coffee.Quantity
     };
   }
 
   // decreaseQuantity = () => {
-  //   this.setState({ quantity: this.state.quantity -1})
+  //   const [quantity, setQuantity] = useState(Coffee.quantity);
   // }
 
   handleClick = () => {
@@ -82,7 +84,8 @@ class InventoryControl extends React.Component {
       <CoffeeDetail 
         coffee = {this.state.selectedCoffee} 
         onClickingDelete = {this.handleDeletingCoffee} 
-        onClickingEdit = {this.handleEditClick}  />
+        onClickingEdit = {this.handleEditClick}
+        decreaseQuantity={this.decreaseQuantity} />
       buttonText = "Return to Coffee List";
     }
     else if (this.state.formVisibleOnPage) {

@@ -8,8 +8,8 @@ function NewCoffeeForm(props){
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
     props.onNewCoffeeCreation({
-      name: event.target.name.value.charAt(0).toUpperCase() + event.target.name.value.slice(1),
-      origin: event.target.origin.value.charAt(0).toUpperCase() + event.target.name.value.slice(1),
+      name: event.target.name.value,
+      origin: event.target.origin.value,
       price: parseInt(event.target.price.value),
       roast: event.target.roast.value,
       quantity: parseInt(event.target.quantity.value),
