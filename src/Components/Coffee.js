@@ -9,7 +9,7 @@ function Coffee(props) {
       <p>Origin: {props.origin}</p>
       <p>Price: {props.price}</p>
       <p>Roast: {props.roast}</p>
-      <p>Quantity: {props.quantity}</p>
+      <p>Lbs of Coffee: {props.quantity}</p>
     </div>
     </React.Fragment>
   );

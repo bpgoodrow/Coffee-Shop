@@ -6,7 +6,6 @@ import EditCoffeeForm from "./EditCoffeeForm";
 import Coffee from "./Coffee";
 
 class InventoryControl extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {

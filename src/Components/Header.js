@@ -6,7 +6,8 @@ function Header(){
     fontFamily: 'sans-serif',
     paddingTop: '50px',
     paddingBottom: '50px',
-    paddingLeft: '10px'
+    paddingLeft: '10px',
+    marginBottom: '10px'
     }
   return(
     <div style={headerStyles}>

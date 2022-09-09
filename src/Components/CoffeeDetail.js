@@ -27,7 +27,7 @@ function CoffeeDetail(props){
         <p>Origin: {coffee.origin}</p>
         <p>Price: ${coffee.price}</p>
         <p>Roast: {coffee.roast}</p>
-        <p>Quantity: {quantity} lb's</p>
+        <p>Quantity: Out of Stock</p>
         <button onClick={() => setQuantity(quantity)}>Sell Coffee</button>
         <button onClick={ props.onClickingEdit }>Update Coffee</button>
         <button onClick={()=> onClickingDelete(coffee.id)}>Delete Coffee</button>
