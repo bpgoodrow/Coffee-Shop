@@ -11,9 +11,13 @@ class InventoryControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       mainInventoryList: [],
-      selectedCoffee: null
+      selectedCoffee: null,
     };
   }
+
+  // decreaseQuantity = () => {
+  //   this.setState({ quantity: this.state.quantity -1})
+  // }
 
   handleClick = () => {
     if (this.state.selectedCoffee != null){
@@ -78,7 +82,7 @@ class InventoryControl extends React.Component {
       <CoffeeDetail 
         coffee = {this.state.selectedCoffee} 
         onClickingDelete = {this.handleDeletingCoffee} 
-        onClickingEdit = {this.handleEditClick} />
+        onClickingEdit = {this.handleEditClick}  />
       buttonText = "Return to Coffee List";
     }
     else if (this.state.formVisibleOnPage) {
@@ -92,6 +96,7 @@ class InventoryControl extends React.Component {
       <React.Fragment>
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button>
+        { this.state.show && <h2>{ this.state.quantity }</h2> }
       </React.Fragment>
     );
   }
