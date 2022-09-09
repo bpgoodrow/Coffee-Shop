@@ -5,13 +5,14 @@ import PropTypes from "prop-types";
 function InventoryList(props) {
   return(
     <React.Fragment>
-      {props.InventoryList.map((coffee) =>
+      {props.inventoryList.map((coffee) =>
         <Coffee
           whenCoffeeClicked = { props.onCoffeeSelection }
           name={coffee.name}
           origin={coffee.origin}
           price={coffee.price}
           roast={coffee.roast}
+          quantity={coffee.quantity}
           id={coffee.id}
           key={coffee.id}
           />

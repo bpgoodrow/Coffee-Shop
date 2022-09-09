@@ -7,10 +7,11 @@ function CoffeeDetail(props){
     <React.Fragment>
       <h1>Coffee Detail</h1>
       <h3>{coffee.name}</h3>
-      <p>{coffee.origin}</p>
-      <p>{coffee.price}</p>
-      <p>{coffee.roast}</p>
-      <p>{coffee.quantity}</p>
+      <p>Origin: {coffee.origin}</p>
+      <p>Price: ${coffee.price}</p>
+      <p>Roast: {coffee.roast}</p>
+      <p>Quantity: {coffee.quantity} lb's</p>
+      <button onClick={ props.onClickingSell }>Sell Coffee </button>
       <button onClick={ props.onClickingEdit }>Update Coffee</button>
       <button onClick={()=> onClickingDelete(coffee.id)}>Delete Coffee</button>
       <hr/>

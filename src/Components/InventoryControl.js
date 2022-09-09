@@ -1,7 +1,7 @@
 import React from "react";
 import InventoryList from "./InventoryList";
+import CoffeeDetail from "./CoffeeDetail";
 import NewCoffeeForm from "./NewCoffeeForm";
-import CoffeeDetail from "./CoffeeDetail/";
 import EditCoffeeForm from "./EditCoffeeForm";
 
 class InventoryControl extends React.Component {
@@ -83,7 +83,7 @@ class InventoryControl extends React.Component {
     }
     else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewCoffeeForm onNewCoffeeCreation={this.handleAddingNewCoffeeToList} />
-      buttonText= "back to coffee list"
+      buttonText= "Return to Coffee List"
     } else {
       currentlyVisibleState = <InventoryList inventoryList={this.state.mainInventoryList} onCoffeeSelection={this.handleChangingSelectedCoffee} />;
       buttonText = "Add Coffee";
