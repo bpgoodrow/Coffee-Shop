@@ -1,10 +1,7 @@
 # Cooper's Coffee Shop
 
-![image](public/Coffee-Shop.png)
 
 #### By _**(Ben Goodrow)**_
-
-#### _{This is a simple RPG game.}_
 
 ## Technologies Used
 
@@ -30,6 +27,11 @@
 
 ## Description
 _{A simple single page react application. Allows a user to create a type of coffee then sell that coffee by the pound.}_
+
+
+##Component Diagram
+
+![image](public/Coffee-Shop.png)
 
 ## Setup/Installation Requirements
 
