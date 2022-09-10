@@ -29,7 +29,7 @@
 _{A simple single page react application. Allows a user to create a type of coffee then sell that coffee by the pound.}_
 
 
-##Component Diagram
+## Component Diagram
 
 ![image](public/Coffee-Shop.png)
 
